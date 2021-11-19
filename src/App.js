@@ -6,7 +6,8 @@ import Products from './components/Shop/Products';
 
 function App() {
   const showCart = useSelector(state => state.ui.cartIsVisible);
-  console.log('showcart in app.js', showCart);
+  console.log('showcart', showCart);
+  
   return (
     <Layout>
       {showCart && <Cart />}

@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit"; 
+import { createSlice } from '@reduxjs/toolkit';
 
 const uiSlice = createSlice({
     name: 'ui',
-    initialState: { cartIsVsible: false },
+    initialState: { cartIsVisible: false },
     reducers: {
         toggle(state) {
-            state.cartIsVsible = !state.cartIsVsible;
+            state.cartIsVisible = !state.cartIsVisible;
         }
     }
 });
@@ -13,3 +13,5 @@ const uiSlice = createSlice({
 export const uiActions = uiSlice.actions;
 
 export default uiSlice;
+
+
